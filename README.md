@@ -65,7 +65,7 @@ pip install -r requirements.txt
 copy .env.example .env            # macOS/Linux: cp .env.example .env
 # edit .env: set OPENAI_API_KEY and OPENAI_MODEL
 python -m app.ingest              # builds the vector index (first run downloads a small model)
-uvicorn app.main:app --reload
+uvicorn app.main:app --reload 
 ```
 
 Open <http://127.0.0.1:8000/docs> for the interactive API page.
